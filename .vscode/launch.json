@@ -1,0 +1,97 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "5.1", 
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/home5.1.dart",        
+            "args": [
+                "--target",
+                "lib/home5.1.dart" 
+            ]
+        },
+        {
+            "name": "5.2",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/home5.2.dart",        
+            "args": [
+                "--target",
+                "lib/home5.2.dart" 
+            ]
+        },
+        {
+            "name": "5.3", 
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/home5.3.dart",        
+            "args": [
+                "--target",
+                "lib/home5.3.dart" 
+            ]
+        },
+        {
+            "name": "5.4", 
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/home5.4.dart",        
+            "args": [
+                "--target",
+                "lib/home5.4.dart" 
+            ]
+        },
+        {
+            "name": "4.1", 
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/home4.1.dart",        
+            "args": [
+                "--target",
+                "lib/home4.1.dart" 
+            ]
+        },
+        {
+            "name": "ex1",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/example1.dart",        
+            "args": [
+                "--target",
+                "lib/example1.dart" 
+            ]
+        },
+        {
+            "name": "226314-Mobile",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "226314-Mobile (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "226314-Mobile (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "main2", // A descriptive name for your configuration
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "program": "lib/main2.dart",        
+            // 2. Crucial: Use the --target argument for reliable hot reload
+            "args": [
+                "--target",
+                "lib/main2.dart" 
+            ]
+        }
+    ]
+}
