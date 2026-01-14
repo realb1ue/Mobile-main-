@@ -21,33 +21,34 @@ class _LoginPageState extends State<LoginPage> {
   Map<String, dynamic>? result;
 
   Future<void> _login() async {
-    const serverURL = 'https://mobile.wattanapong.com/api/auth/login';
+    // const serverURL = 'https://mobile.wattanapong.com/api/auth/login';
 
-    try {
-      final response = await dio.post(
-        serverURL,
-        data: {
-          'email': _emailController.text,
-          'pass': _passwordController.text,
-        },
-      );
+    // try {
+    //   final response = await dio.post(
+    //     serverURL,
+    //     data: {
+    //       'email': _emailController.text,
+    //       'pass': _passwordController.text,
+    //     },
+    //   );
+      
 
-      if (response.statusCode == 200) {
-        final data = response.data;
-        final prefs = await SharedPreferences.getInstance();
-        prefs.setString('name', data['member']['name']);
-        prefs.setString('email', data['member']['email']);
+      // if (response.statusCode == 200) {
+      //   final data = response.data;
+      //   final prefs = await SharedPreferences.getInstance();
+      //   prefs.setString('name', data['member']['name']);
+      //   prefs.setString('email', data['member']['email']);
 
         if (mounted) {
           Navigator.pushReplacementNamed(context, '/member');
         }
-      }
-    } on DioException catch (e) {
-      setState(() {
-        _errorMessage = e.response?.data['message'] ?? e.message;
-      });
-    }
-  }
+      // }
+    } //on DioException catch (e) {
+  //     setState(() {
+  //       _errorMessage = e.response?.data['message'] ?? e.message;
+  //     });
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
